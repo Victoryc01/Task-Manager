@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<h1>LOG IN HERE</h1>
+<form action="/userLogin" method="post" th:object="${loginRequest}">
+   Enter Email: <label>
+  <input type="email" name="email">
+</label><br>
+  Enter Password: <label>
+  <input type="password" name="password">
+</label><br>
+  <input type="submit" value="LOGIN">
+</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/viewTask.css">
+
+  <title>view all task in users task page</title>
+</head>
+<body>
+<h1>MY TASK</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>COMPLETED AT</th>
+    <th>CREATED AT</th>
+    <th>DESCRIPTION</th>
+    <th>STATUS</th>
+    <th>TITLE</th>
+    <th>ACTION</th>
+  </tr>
+  <tr th:each="task : ${taskList}">
+    <td th:text="${task.id}"></td>
+    <td th:text="${task.completedAt}"></td>
+    <td th:text="${task.createdAt}"></td>
+    <td th:text="${task.description}"></td>
+    <td th:text="${task.status}"></td>
+    <td th:text="${task.title}"></td>
+    <td>
+      <form th:action="@{'/deleteTask/' + ${task.getId()}}" method="post">
+        <button type="submit">DELETE TASK</button>
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <form th:action="@{'/editTask/'+ ${task.getId()}}" method="get">
+        <button type="submit">EDIT TASK</button>
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <form th:action="@{'/updateStatus/' + ${task.getId()}}" method="get">
+        <button type="submit">UPDATE STATUS</button>
+      </form>
+    </td>
+  </tr>
+</table>
+<h1>VIEW ALL STATUS HERE </h1>
+<a th:href="@{/statuses}">viewAllStatus</a>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>TASK PAGE</title>
+</head>
+<body>
+<h1> CREATE YOUR TASK</h1>
+<form action="/creatingTask" method="post" th:object="${task}">
+  Enter title: <label>
+  <input type="text" name="title" required>
+</label><br>
+  Enter description: <label>
+  <input type="text" name="description" required>
+</label><br>
+  Enter status:
+  <div class="form-group">
+    <label for="status">Status</label>
+    <select class="form-control" id="status" name="status">
+      <option value="IN_PROGRESS">IN_PROGRESS</option>
+      <option value="PENDING">PENDING</option>
+      <option value="DONE">DONE</option>
+    </select>
+  </div>
+
+  Enter date this task was created: <label>
+  <input type="date" name="createdAt" required>
+</label><br>
+  Enter date you intend to complete this task: <label>
+  <input type="date" name="completedAt" required>
+</label><br>
+  <input type="submit" value="CREATE TASK">
+</form>
+<a href="/viewTask">viewAllTask</a><br>
+</body>
+</html>

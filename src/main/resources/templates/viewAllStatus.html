@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Task Statuses</title>
+</head>
+<body>
+<h1>TASK STATUS</h1>
+<ul>
+  <li th:each="status : ${statuses}">
+    <a th:href="@{/status/{status}(status=${status})}" th:text="${status}"></a>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/*!* Reset some default styles *!*/
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!* Global styles for headings and links *!*/
+/*h1 {*/
+/*    color: #007BFF;*/
+/*    text-align: center;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #007BFF;*/
+/*}*/
+
+/*!* Style forms *!*/
+/*form {*/
+/*    text-align: center;*/
+/*}*/
+
+/*label {*/
+/*    display: block;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*input[type="text"],*/
+/*input[type="email"],*/
+/*input[type="password"],*/
+/*input[type="date"],*/
+/*select {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 5px;*/
+/*    margin: 5px 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*!* Style buttons *!*/
+/*input[type="submit"],*/
+/*button {*/
+/*    background-color: #007BFF;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    padding: 10px 20px;*/
+/*    cursor: pointer;*/
+/*    margin: 10px;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*input[type="submit"]:hover,*/
+/*button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*!* Style tables *!*/
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    width: 100%;*/
+/*}*/
+
+/*th, td {*/
+/*    padding: 8px;*/
+/*    text-align: left;*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*!* Style links in lists *!*/
+/*ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*ul li {*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*ul li a {*/
+/*    color: #007BFF;*/
+/*}*/
+
+
+
+
+
+
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Additional styles for specific elements (add more as needed) */
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for tables (add more as needed) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #007BFF;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>UPDATING STATUS</title>
+</head>
+<body>
+<h1>UPDATE THE STATUS OF YOUR TASK</h1>
+<form th:action="@{'/updateStatus/' + ${taskId}}" method="post" th:object="${updateStatus}">
+  Enter new Status here:
+  <div class="form-group">
+    <label for="status">Status</label>
+    <select class="form-control" id="status" name="status">
+      <option value="IN_PROGRESS">IN_PROGRESS</option>
+      <option value="PENDING">PENDING</option>
+      <option value="DONE">DONE</option>
+    </select>
+  </div>
+    <input type="submit" value="UPDATE STATUS">
+</form>
+</body>
+</html>
